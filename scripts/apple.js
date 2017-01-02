@@ -35,9 +35,9 @@ module.exports = function(robot) {
 			}		
         })		
     });
-	return robot.catchAll(function(res) {
-    return res.send("您輸入的指令 "+ res.message.text + " 不存在哦~ " +
-	"\n如需查看更多的指令，請輸入 mybot help");
-  });
+	// return robot.catchAll(function(res) {
+    // return res.send("您輸入的指令 "+ res.message.text + " 不存在哦~ " +
+	// "\n如需查看更多的指令，請輸入 mybot help");
+  // });
 	
 }
