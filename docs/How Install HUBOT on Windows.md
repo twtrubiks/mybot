@@ -1,121 +1,179 @@
-# ¦p¦ó¦b Windows ¦w¸Ë HUBOT
-How Install HUBOT on Windows 
+# å¦‚ä½•åœ¨ Windows å®‰è£ HUBOT
 
-¥i°Ñ¦ÒHUBOT©xºô[HUBOT](https://hubot.github.com/)ªº¦w¸Ë±Ğ¾Ç ¡C<br>   
-¥»¤H¦b³o¸Ì°Ñ¦Ò[HUBOT](https://hubot.github.com/)©xºôªº±Ğ¾Ç¡A¨Ã¥Î¤¤¤å¬ö¿ı¤@¤U:memo:
+How Install HUBOT on Windows
 
-## ¦w¸Ënode and npm
-¦w¸Ë¤èªk°Ñ¦Ò[ HUBOT ](https://hubot.github.com/)©xºô«ØÄ³ªº¨Ï¥Î[ chocolatey ](https://chocolatey.org/) ¦w¸Ë¡A<br>
-­º¥ı¡A¨Ï¥Î<b> ¨t²ÎºŞ²z­û </b>°õ¦æCMD¡AµM«á¿é¤J¥H¤U«ü¥O
-```
+å¯åƒè€ƒHUBOTå®˜ç¶²[HUBOT](https://hubot.github.com/)çš„å®‰è£æ•™å­¸ ã€‚
+
+æœ¬äººåœ¨é€™è£¡åƒè€ƒ[HUBOT](https://hubot.github.com/)å®˜ç¶²çš„æ•™å­¸ï¼Œä¸¦ç”¨ä¸­æ–‡ç´€éŒ„ä¸€ä¸‹:memo:
+
+## å®‰è£node and npm
+
+å®‰è£æ–¹æ³•åƒè€ƒ [HUBOT](https://hubot.github.com/) å®˜ç¶²å»ºè­°çš„ä½¿ç”¨ [chocolatey](https://chocolatey.org/) å®‰è£ï¼Œ
+
+é¦–å…ˆï¼Œä½¿ç”¨ **ç³»çµ±ç®¡ç†å“¡** åŸ·è¡ŒCMDï¼Œç„¶å¾Œè¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤
+
+```cmd
 @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 ```
-©Î¬O<br>
-¨Ï¥Î<b> ¨t²ÎºŞ²z­û </b>°õ¦æ PowerShell ©R¥O¦C¡AµM«á¿é¤J¥H¤U«ü¥O
-```
+
+æˆ–æ˜¯
+
+ä½¿ç”¨ **ç³»çµ±ç®¡ç†å“¡** åŸ·è¡Œ PowerShell å‘½ä»¤åˆ—ï¼Œç„¶å¾Œè¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤
+
+```cmd
 iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
-¥H¤W¤èªk¿ï¤@ºØ§Y¥i¡A¦w¸Ë®É¡AÀ³¸Ó·|¥X²{¿ù»~¡A½Ğ¥Î<b> ¨t²ÎºŞ²z­û </b>¥´¶} PowerShell¡AµM«á°õ¦æ¥H¤U«ü¥O¡G
-```
+
+ä»¥ä¸Šæ–¹æ³•é¸ä¸€ç¨®å³å¯ï¼Œå®‰è£æ™‚ï¼Œæ‡‰è©²æœƒå‡ºç¾éŒ¯èª¤ï¼Œè«‹ç”¨ **ç³»çµ±ç®¡ç†å“¡** æ‰“é–‹ PowerShellï¼Œç„¶å¾ŒåŸ·è¡Œä»¥ä¸‹æŒ‡ä»¤ï¼š
+
+```cmd
 Set-ExecutionPolicy RemoteSigned
 ```
-±µµÛ¿ï Y(YES)¡A§Y¥i¶¶§Q¦w¸Ë¡C
 
-## ¦w¸ËNode JS
-### ¤èªk¤@
-¨Ï¥Î<b> ¨t²ÎºŞ²z­û </b>°õ¦æ PowerShell ©R¥O¦C¡AµM«á¿é¤J¥H¤U«ü¥O
-```
+æ¥è‘—é¸ Y(YES)ï¼Œå³å¯é †åˆ©å®‰è£ã€‚
+
+## å®‰è£Node JS
+
+### æ–¹æ³•ä¸€
+
+ä½¿ç”¨ **ç³»çµ±ç®¡ç†å“¡** åŸ·è¡Œ PowerShell å‘½ä»¤åˆ—ï¼Œç„¶å¾Œè¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤
+
+```cmd
 choco install nodejs.install
 ```
-¥i¯à·|°İ§A¤@¨ÇªF¦è¡A¿ï 1 YES¡C<br>
-±µµÛ ³]©wÀô¹ÒÅÜ¼Æ¡A<br>
-¨Ï¥Î<b> ¨t²ÎºŞ²z­û </b>°õ¦æCMD¡AµM«á¿é¤J¥H¤U«ü¥O
-```
+
+å¯èƒ½æœƒå•ä½ ä¸€äº›æ±è¥¿ï¼Œé¸ 1 YESã€‚
+
+æ¥è‘— è¨­å®šç’°å¢ƒè®Šæ•¸ï¼Œ
+
+ä½¿ç”¨ **ç³»çµ±ç®¡ç†å“¡** åŸ·è¡Œ CMDï¼Œç„¶å¾Œè¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤
+
+```cmd
 setx /M PATH "%PATH%;C:\Program Files\nodejs\"
 ```
-¤]¥i¥H¤â°Ê¦Û¤v³]©wÀô¹ÒÅÜ¼Æ¡A³]©w¦n·|¦p¤U¹Ï<br>
-![alt tag](http://i.imgur.com/YKlFgrF.jpg)<br>
-<br>
-### ¤èªk¤G
-ª½±µ¨ì[ Node.js ](https://nodejs.org/en/)©xºô¤U¸ü¡AµM«á¦w¸Ë¡C
 
-## ¶}©l«Ø¥ß HUBOT
-¥ı¦w¸Ë¥²­n®M¥ó¡A°õ¦æCMD¡AµM«á¿é¤J¥H¤U«ü¥O
-```
+ä¹Ÿå¯ä»¥æ‰‹å‹•è‡ªå·±è¨­å®šç’°å¢ƒè®Šæ•¸ï¼Œè¨­å®šå¥½æœƒå¦‚ä¸‹åœ–
+
+![alt tag](http://i.imgur.com/YKlFgrF.jpg)
+
+### æ–¹æ³•äºŒ
+
+ç›´æ¥åˆ° [Node.js](https://nodejs.org/en/) å®˜ç¶²ä¸‹è¼‰ï¼Œç„¶å¾Œå®‰è£ã€‚
+
+## é–‹å§‹å»ºç«‹ HUBOT
+
+å…ˆå®‰è£å¿…è¦å¥—ä»¶ï¼ŒåŸ·è¡ŒCMDï¼Œç„¶å¾Œè¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤
+
+```cmd
 npm install -g hubot coffee-script yo generator-hubot
 ```
-±µµÛ¿ï¤@­Ó¦Û¤v³ßÅwªº¸ô®|¡A°õ¦æCMD¡AµM«á¿é¤J¥H¤U«ü¥O
-```
+
+æ¥è‘—é¸ä¸€å€‹è‡ªå·±å–œæ­¡çš„è·¯å¾‘ï¼ŒåŸ·è¡ŒCMDï¼Œç„¶å¾Œè¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤
+
+```cmd
 mkdir myhubot
 cd myhubot
 ```
-±µµÛ¦A¿é¤J¥H¤U«ü¥O
-```
+
+æ¥è‘—å†è¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤
+
+```cmd
 yo hubot
 ```
-±µµÛ·|°İ§A¤@¨Ç­n³]©wªºªF¦è¡A¾Ö¦³ªÌ¡B¾÷¾¹¤H¦WºÙ¡B´y­z ¡BBot adapter¡A°ò¥»¤W³£¥Î¹w³]´N¦æ¤F¡Aª½±µ«öEnter<br>
-P.S <b> Bot adapter </b> ¦b³o¸Ì§Ú¬O¿é¤J <b> slack </b> (¥i¨Ì·Ó¦Û¤vªº»İ¨D¿ï¾Ü[ Adapters ](https://hubot.github.com/docs/adapters/) )
-![alt tag](http://i.imgur.com/U623K56.jpg)<br>
 
-¶}©l±Ò°Ê HUBOT¡A¦b¦Û¤v³Ğ¥ßªº¸ê®Æ§¨¸Ì¤U¨Ï¥ÎCMD¡AµM«á¿é¤J¥H¤U«ü¥O¡A
-§Ú­Ì¥ı¨Ï¥Î<b> shell adapter </b>¤U¥h´ú¸Õ
-```
+æ¥è‘—æœƒå•ä½ ä¸€äº›è¦è¨­å®šçš„æ±è¥¿ï¼Œæ“æœ‰è€…ã€æ©Ÿå™¨äººåç¨±ã€æè¿° ã€Bot adapterï¼ŒåŸºæœ¬ä¸Šéƒ½ç”¨é è¨­å°±è¡Œäº†ï¼Œç›´æ¥æŒ‰Enter
+
+P.S **Bot adapter** åœ¨é€™è£¡æˆ‘æ˜¯è¼¸å…¥ **slack** (å¯ä¾ç…§è‡ªå·±çš„éœ€æ±‚é¸æ“‡ [Adapters](https://hubot.github.com/docs/adapters/) )
+![alt tag](http://i.imgur.com/U623K56.jpg)
+
+é–‹å§‹å•Ÿå‹• HUBOTï¼Œåœ¨è‡ªå·±å‰µç«‹çš„è³‡æ–™å¤¾è£¡ä¸‹ä½¿ç”¨CMDï¼Œç„¶å¾Œè¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤ï¼Œ
+æˆ‘å€‘å…ˆä½¿ç”¨ **shell adapter** ä¸‹å»æ¸¬è©¦
+
+```cmd
 bin\hubot -a shell
 ```
-±Ò°Ê¦¨¥\«á¡A¥i¿é¤J«ü¥O´ú¸Õ¡A¨Ò¦p
-```
-[¾÷¾¹¤H¦WºÙ] echo [·Q­nµo¥Xªº°T®§] 
+
+å•Ÿå‹•æˆåŠŸå¾Œï¼Œå¯è¼¸å…¥æŒ‡ä»¤æ¸¬è©¦ï¼Œä¾‹å¦‚
+
+```cmd
+[æ©Ÿå™¨äººåç¨±] echo [æƒ³è¦ç™¼å‡ºçš„è¨Šæ¯]
 myhubot echo hello
 ```
-¦p»İÆ[¬İ§ó¦h«ü¥O¡A¥i¥H¨Ï¥Î
-```
-[¾÷¾¹¤H¦WºÙ] help
+
+å¦‚éœ€è§€çœ‹æ›´å¤šæŒ‡ä»¤ï¼Œå¯ä»¥ä½¿ç”¨
+
+```cmd
+[æ©Ÿå™¨äººåç¨±] help
 myhubot help
 ```
-![alt tag](http://i.imgur.com/4yMnqgT.jpg)<br>
 
-¥H¤W´N¬O¨Ï¥Î<b> shell adapter </b>¡A<br>
+![alt tag](http://i.imgur.com/4yMnqgT.jpg)
 
-## µ²¦Xhubot-slack
-¥i°Ñ¦Ò[ hubot-slack](https://github.com/slackhq/hubot-slack)<br>
-¦b¦P¸ê®Æ§¨©³¤U°õ¦æCMD¡AµM«á¿é¤J¥H¤U«ü¥O
-```
+ä»¥ä¸Šå°±æ˜¯ä½¿ç”¨ **shell adapter** ï¼Œ
+
+## çµåˆhubot-slack
+
+å¯åƒè€ƒ [hubot-slack](https://github.com/slackhq/hubot-slack)
+
+åœ¨åŒè³‡æ–™å¤¾åº•ä¸‹åŸ·è¡ŒCMDï¼Œç„¶å¾Œè¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤
+
+```cmd
 npm install -g hubot-slack --save
 ```
-±µµÛ¨ì[ Slack](https://slack.com/) ¥Ó½Ğ±b¸¹¡A<br>
-¥h [https://my.slack.com/services/new/hubot](https://my.slack.com/services/new/hubot) ·s¼W¤@­Ó Hubot APP¡A<br>
-¨Ã¥B¨ú±o¦Û¤vªº API Token<br>
-```
+
+æ¥è‘—åˆ° [Slack](https://slack.com/) ç”³è«‹å¸³è™Ÿï¼Œ
+
+å» [https://my.slack.com/services/new/hubot](https://my.slack.com/services/new/hubot) æ–°å¢ä¸€å€‹ Hubot APPï¼Œ
+
+ä¸¦ä¸”å–å¾—è‡ªå·±çš„ API Token
+
+```cmd
 HUBOT_SLACK_TOKEN=xoxb-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
-![alt tag](http://i.imgur.com/VFHA2og.jpg)<br>
-³]©w<b> Àô¹ÒÅÜ¼Æ </b>¡A°õ¦æCMD¡AµM«á¿é¤J¥H¤U«ü¥O<br>
-ª`·N¡A¤¤¶¡¤£¯à¦³ªÅ®æ¡A¤£µM·|µLªk³]©wÀô¹ÒÅÜ¼Æ¡C
-```
+
+![alt tag](http://i.imgur.com/VFHA2og.jpg)
+
+è¨­å®š **ç’°å¢ƒè®Šæ•¸** ï¼ŒåŸ·è¡ŒCMDï¼Œç„¶å¾Œè¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤
+
+æ³¨æ„ï¼Œä¸­é–“ä¸èƒ½æœ‰ç©ºæ ¼ï¼Œä¸ç„¶æœƒç„¡æ³•è¨­å®šç’°å¢ƒè®Šæ•¸ã€‚
+
+```cmd
 set HUBOT_SLACK_TOKEN=xoxb-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
-¨Ï¥ÎNode.js°õ¦æ¡AµM«á¿é¤J¥H¤U«ü¥O
-```
+
+ä½¿ç”¨ Node.js åŸ·è¡Œï¼Œç„¶å¾Œè¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤
+
+```cmd
 process.env
 ```
-¦p»İÆ[¬İ¯S©w°Ñ¼Æªº­È¡A¥i¿é¤J¤U¦C«ü¥O
-```
+
+å¦‚éœ€è§€çœ‹ç‰¹å®šåƒæ•¸çš„å€¼ï¼Œå¯è¼¸å…¥ä¸‹åˆ—æŒ‡ä»¤
+
+```cmd
 process.env.HUBOT_SLACK_TOKEN
 ```
-§ó¦h¸ê®Æ¥i°Ñ¦Ò [Node.js](https://nodejs.org/api/process.html)  
 
-±µµÛ¦A¿é¤J¥H¤U«ü¥O©Mslack³s±µ
-```
+æ›´å¤šè³‡æ–™å¯åƒè€ƒ [Node.js](https://nodejs.org/api/process.html)
+
+æ¥è‘—å†è¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤å’Œ slack é€£æ¥
+
+```cmd
 bin\hubot -a slack
 ```
-![alt tag](http://i.imgur.com/Dhak4wm.jpg)<br>
-±µµÛ¦A¦^¨ìslack¤W¡A¥i¥Hµo²{³s½u¦¨¥\<br>
-![alt tag](http://i.imgur.com/DrLXF8C.jpg)<br>
+
+![alt tag](http://i.imgur.com/Dhak4wm.jpg)
+
+æ¥è‘—å†å›åˆ°slackä¸Šï¼Œå¯ä»¥ç™¼ç¾é€£ç·šæˆåŠŸ
+
+![alt tag](http://i.imgur.com/DrLXF8C.jpg)
 
 ## Deploying to Heroku
-¥i°Ñ¦Ò [hubot-slack](https://github.com/slackhq/hubot-slack)¡A¥ı¨ì [Heroku](https://www.heroku.com/)µù¥U±b¸¹¡A¦A¦w¸Ë [Heroku Toolbelt ](https://toolbelt.heroku.com/)¡A<br>
-°õ¦æCMD¡AµM«á¿é¤J¥H¤U«ü¥O¡A¿é¤J¦Û¤vªº±b¸¹©M±K½X
-```
+
+å¯åƒè€ƒ [hubot-slack](https://github.com/slackhq/hubot-slack)ï¼Œå…ˆåˆ° [Heroku](https://www.heroku.com/)è¨»å†Šå¸³è™Ÿï¼Œå†å®‰è£ [Heroku Toolbelt](https://toolbelt.heroku.com/) ï¼Œ
+
+åŸ·è¡ŒCMDï¼Œç„¶å¾Œè¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤ï¼Œè¼¸å…¥è‡ªå·±çš„å¸³è™Ÿå’Œå¯†ç¢¼
+
+```cmd
 % heroku login
 Enter your Heroku credentials.
 Email: youremail@example.com
@@ -125,58 +183,79 @@ Would you like to generate one? [Yn]
 Generating new SSH public key.
 Uploading ssh public key /Users/you/.ssh/id_rsa.pub
 ```
+
 Initialize git and make your initial commit
-```
+
+```cmd
 % git init
 % git add .
 % git commit -m "Initial commit"
 ```
-¶}©l³Ğ³y Heroku APP
-```
+
+é–‹å§‹å‰µé€  Heroku APP
+
+```cmd
 % heroku create
 Creating app... done, stack is cedar-14
 https://cryptic-basin-78675.herokuapp.com/ | https://git.heroku.com/cryptic-basin-78675.git
 ```
-±µµÛ¿é¤J¦Û¤vªº Heroku APP ºô§}¥H¤Î APP ¦WºÙ¥H¤Î HUBOT_SLACK_TOKEN
-```
+
+æ¥è‘—è¼¸å…¥è‡ªå·±çš„ Heroku APP ç¶²å€ä»¥åŠ APP åç¨±ä»¥åŠ HUBOT_SLACK_TOKEN
+
+```cmd
 % heroku config:add HEROKU_URL=https://cryptic-basin-78675.herokuapp.com/ --app cryptic-basin-78675
 % heroku config:add HUBOT_SLACK_TOKEN=xoxb-xxxxxxxxxxxxxxxxxxxxxxxxxxxx --app cryptic-basin-78675
 
 Setting config vars and restarting cryptic-basin-78675... done
 HUBOT_SLACK_TOKEN: xoxb-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
+
 Deploy the bot
-```
+
+```cmd
 git push heroku master
 ```
-§G¸p§¹¦¨¤§«á¡A¦A¦^¨ìslack¤W¡A¥i¥Hµo²{³s½u¦¨¥\¡C<br>
-![alt tag](http://i.imgur.com/DrLXF8C.jpg)<br>
-¦pªGÁÙ¦³¨ä¥LªºÀô¹ÒÅÜ¼Æ­n³]©w¡A¥i¥H¦b¥H¤U¦a¤è³]©w¡C<br>
-![alt tag](http://i.imgur.com/UOKEt7a.jpg)<br>
 
-## ¨ä¥Lª`·N¨Æ¶µ
-¦pªG­n¨Ï¥Î hubot-scripts ¸Ì­±ªºÀÉ®×¡A°²³]¤µ¤Ñ­n¨Ï¥Î news.coffee¡A<br>
-news.coffee ¸ô®|¬° \myhubot\node_modules\hubot-scripts\news.coffee¡A<br>
-½Ğ°O±o¦b<b> hubot-scripts.json </b> ¸Ì¥[¤J "news.coffee"¡C<br><br>
+ä½ˆç½²å®Œæˆä¹‹å¾Œï¼Œå†å›åˆ°slackä¸Šï¼Œå¯ä»¥ç™¼ç¾é€£ç·šæˆåŠŸã€‚
 
-°²¦pscript¸Ì¥X²{ 
-```
+![alt tag](http://i.imgur.com/DrLXF8C.jpg)
+
+å¦‚æœé‚„æœ‰å…¶ä»–çš„ç’°å¢ƒè®Šæ•¸è¦è¨­å®šï¼Œå¯ä»¥åœ¨ä»¥ä¸‹åœ°æ–¹è¨­å®šã€‚
+
+![alt tag](http://i.imgur.com/UOKEt7a.jpg)
+
+## å…¶ä»–æ³¨æ„äº‹é …
+
+å¦‚æœè¦ä½¿ç”¨ hubot-scripts è£¡é¢çš„æª”æ¡ˆï¼Œå‡è¨­ä»Šå¤©è¦ä½¿ç”¨ news.coffeeï¼Œ
+
+news.coffee è·¯å¾‘ç‚º \myhubot\node_modules\hubot-scripts\news.coffeeï¼Œ
+
+è«‹è¨˜å¾—åœ¨ **hubot-scripts.json** è£¡åŠ å…¥ "news.coffee"ã€‚
+
+å‡å¦‚ script è£¡å‡ºç¾
+
+```javascript
 HTMLParser  = require "cheerio"
 ```
-¥Nªí»İ­nÃB¥~¦w¸Ë¡A°õ¦æCMD¡AµM«á¿é¤J¥H¤U«ü¥O
-```
+
+ä»£è¡¨éœ€è¦é¡å¤–å®‰è£ï¼ŒåŸ·è¡ŒCMDï¼Œç„¶å¾Œè¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤
+
+```cmd
 npm install cheerio --save
 ```
-¨Ã¥B¦b<b> package.json </b>ªº<b> dependencies </b>¥[¤J "cheerio"¥H¤Îª©¥»<br><br>
 
-¦pªG­n¨Ï¥Î [hubot-youtube](https://github.com/hubot-scripts/hubot-youtube)¡A°õ¦æCMD¡AµM«á¿é¤J¥H¤U«ü¥O<br>
-```
+ä¸¦ä¸”åœ¨ **package.json** çš„ **dependencies** åŠ å…¥ "cheerio"ä»¥åŠç‰ˆæœ¬
+
+å¦‚æœè¦ä½¿ç”¨ [hubot-youtube](https://github.com/hubot-scripts/hubot-youtube)ï¼ŒåŸ·è¡Œ CMD ï¼Œç„¶å¾Œè¼¸å…¥ä»¥ä¸‹æŒ‡ä»¤
+
+```cmd
 npm install hubot-youtube --save
 ```
-¨Ã¦b<b> external-scripts.json </b>¥[¤J "hubot-youtube"
 
+ä¸¦åœ¨ **external-scripts.json** åŠ å…¥ "hubot-youtube"
 
 ## Environment
+
 * Windows 8.1
 * npm 3.8.6
 * Node 4.4.3
